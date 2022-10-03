@@ -4,4 +4,4 @@ all:
 clean:
 	rm -rf server.out
 	rm -rf client.out
-	rm -rf serverClientFile.txt
+	rm -rf clientServerFile.txt
