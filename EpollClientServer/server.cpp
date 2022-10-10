@@ -13,6 +13,7 @@
 #include <sys/time.h>
 #include <sys/poll.h>
 #include <sys/epoll.h>
+#include <arpa/inet.h>
 
 #define PORT 8080
 using namespace std;

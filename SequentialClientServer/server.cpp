@@ -5,6 +5,7 @@
 #include <netinet/in.h>
 #include <stdio.h>
 #include <fstream>
+#include <arpa/inet.h>
 
 #define PORT 8000
 using namespace std;

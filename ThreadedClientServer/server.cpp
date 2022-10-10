@@ -4,6 +4,7 @@
 #include <unistd.h>
 #include <netinet/in.h>
 #include <stdio.h>
+#include <arpa/inet.h>
 #include <fstream>
 #include <pthread.h>
 #include <sys/file.h> 
