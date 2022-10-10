@@ -4,6 +4,7 @@ all:
 	$(MAKE) -C ./SelectClientServer
 	$(MAKE) -C ./SequentialClientServer
 	$(MAKE) -C ./ThreadedClientServer
+	$(MAKE) -C ./EpollClientServer
 
 clean:
 	$(MAKE) -C ./PollClientServer clean
@@ -11,3 +12,4 @@ clean:
 	$(MAKE) -C ./SelectClientServer clean
 	$(MAKE) -C ./SequentialClientServer clean
 	$(MAKE) -C ./ThreadedClientServer clean
+	$(MAKE) -C ./EpollClientServer clean
