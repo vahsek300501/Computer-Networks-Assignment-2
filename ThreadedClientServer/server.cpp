@@ -7,10 +7,14 @@
 #include <arpa/inet.h>
 #include <fstream>
 #include <pthread.h>
-#include <sys/file.h> 
+#include <sys/file.h>
+#include <chrono>
+#include <ctime> 
 
 #define PORT 8000
 using namespace std;
+
+using namespace std::chrono;
 
 bool succesfullExec = true;
 bool unsuccesfullExec = false;
@@ -93,6 +97,7 @@ int main() {
 //  Listen System Call
     listen(serverSocketFileDescriptor,20);
     pthread_t threadArr[10];
+    // milliseconds startTime = duration_cast< milliseconds >(system_clock::now().time_since_epoch());
     for(int i = 0;i<10;i++) {
         struct sockaddr_in clientAddress; 
         clientLength = sizeof(clientAddress);
@@ -113,6 +118,8 @@ int main() {
         newSocketDescriptor->clientPort = to_string(clientAddress.sin_port);
         pthread_create(&threadArr[i],NULL,printData,newSocketDescriptor);
     }
+    // milliseconds endTime = duration_cast< milliseconds >(system_clock::now().time_since_epoch());
+    // cout<<"Time Elapsed to handle all clients are: "<<endTime.count() - startTime.count()<<endl;
     for(int i = 0;i<10;i++) {
         pthread_join(threadArr[i],nullptr);
     }

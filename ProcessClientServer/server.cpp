@@ -10,9 +10,14 @@
 #include <sys/wait.h>
 #include <unistd.h>
 #include <arpa/inet.h>
+#include <chrono>
+#include <ctime> 
+
 
 #define PORT 8000
 using namespace std;
+
+using namespace std::chrono;
 
 int writeFileDescriptor;
 
@@ -87,7 +92,7 @@ int main() {
 
 //  Listen System Call
     listen(serverSocketFileDescriptor,20);
-
+    // milliseconds startTime = duration_cast< milliseconds >(system_clock::now().time_since_epoch());
     pid_t processID[10];
 
     for(int i =0;i<10;i++) {
@@ -121,6 +126,8 @@ int main() {
     int status = 0;
     pid_t wpid;
     while((wpid = wait(&status)) > 0);
+    // milliseconds endTime = duration_cast< milliseconds >(system_clock::now().time_since_epoch());
+    // cout<<"Time Elapsed to handle all clients are: "<<endTime.count() - startTime.count()<<endl;
     close(writeFileDescriptor);
     flock(writeFileDescriptor,LOCK_UN);
     shutdown(serverSocketFileDescriptor,SHUT_RDWR);

@@ -12,9 +12,12 @@
 #include <arpa/inet.h>
 #include <sys/time.h>
 #include <sys/poll.h>
+#include <chrono>
+#include <ctime> 
 
 #define PORT 8080
 using namespace std;
+using namespace std::chrono;
 
 struct SocketDescriptor {
     int socketFileDescriptor;
@@ -79,6 +82,7 @@ int main() {
     fileDescriptors[0].events = POLL_IN;
     cntClientCount++;
     maxClients++;
+    // milliseconds startTime = duration_cast< milliseconds >(system_clock::now().time_since_epoch());
     while(true) {
         if(maxClients == 11 && cntClientCount == 1)
             break;
@@ -140,6 +144,8 @@ int main() {
             i++;
         }
     }
+    // milliseconds endTime = duration_cast< milliseconds >(system_clock::now().time_since_epoch());
+    // cout<<"Time Elapsed to handle all clients are: "<<endTime.count() - startTime.count()<<endl;
     outFile.close();
     shutdown(serverSocketFileDescriptor,SHUT_RDWR);
     return 0;

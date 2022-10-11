@@ -6,9 +6,13 @@
 #include <stdio.h>
 #include <fstream>
 #include <arpa/inet.h>
+#include <chrono>
+#include <ctime>
 
 #define PORT 8000
 using namespace std;
+
+using namespace std::chrono;
 
 long long int getFactorialOfNumber(int num) {
     if(num == 0)
@@ -55,7 +59,7 @@ int main() {
         cout << "error opening file";
         return -1;
     }
-
+    // milliseconds startTime = duration_cast< milliseconds >(system_clock::now().time_since_epoch());
     while(true) {
 
 //      Accept system call
@@ -99,6 +103,8 @@ int main() {
     }
     outFile.close();
     shutdown(serverSocketFileDescriptor,SHUT_RDWR);
+    // milliseconds endTime = duration_cast< milliseconds >(system_clock::now().time_since_epoch());
+    // cout<<"Time Elapsed to handle all clients are: "<<endTime.count() - startTime.count()<<endl;
 
     return 0;
 }

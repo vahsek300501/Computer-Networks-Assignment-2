@@ -11,9 +11,13 @@
 #include <unistd.h>
 #include <arpa/inet.h>
 #include <sys/time.h>
+#include <chrono>
+#include <ctime> 
 
 #define PORT 8000
 using namespace std;
+
+using namespace std::chrono;
 
 struct SocketDescriptor {
     int socketFileDescriptor;
@@ -62,7 +66,7 @@ int main() {
 
 //  Listen System Call
     listen(serverSocketFileDescriptor,20);
-
+    // milliseconds startTime = duration_cast< milliseconds >(system_clock::now().time_since_epoch());
     
     FD_ZERO(&fileDescriptors);
     FD_SET(serverSocketFileDescriptor,&fileDescriptors);
@@ -122,6 +126,8 @@ int main() {
             }
         }
     }
+    // milliseconds endTime = duration_cast< milliseconds >(system_clock::now().time_since_epoch());
+    // cout<<"Time Elapsed to handle all clients are: "<<endTime.count() - startTime.count()<<endl;
     outFile.close();
     shutdown(serverSocketFileDescriptor,SHUT_RDWR);
     return 0;
