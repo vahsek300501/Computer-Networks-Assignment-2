@@ -1,0 +1,80 @@
+top - 20:36:42 up  7:47,  1 user,  load average: 0.46, 0.68, 0.90
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 10.7 us,  0.8 sy,  0.0 ni, 88.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7827.1 total,   3553.2 free,   1915.3 used,   2358.5 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   4993.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  33389 keshav    20   0    6064   1932   1756 S   0.0   0.0   0:00.00 server.+
+
+top - 20:36:43 up  7:47,  1 user,  load average: 0.46, 0.68, 0.90
+Tasks:   0 total,   0 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  9.5 us,  1.2 sy,  0.0 ni, 86.6 id,  1.7 wa,  0.0 hi,  0.9 si,  0.0 st
+MiB Mem :   7827.1 total,   3553.2 free,   1915.3 used,   2358.5 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   4993.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+
+top - 20:36:44 up  7:47,  1 user,  load average: 0.46, 0.68, 0.90
+Tasks:   0 total,   0 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.6 us,  0.5 sy,  0.0 ni, 94.4 id,  0.0 wa,  0.0 hi,  0.5 si,  0.0 st
+MiB Mem :   7827.1 total,   3553.2 free,   1915.3 used,   2358.5 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   4993.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+
+top - 20:36:45 up  7:47,  1 user,  load average: 0.46, 0.68, 0.90
+Tasks:   0 total,   0 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.5 us,  0.3 sy,  0.0 ni, 94.9 id,  0.0 wa,  0.0 hi,  0.4 si,  0.0 st
+MiB Mem :   7827.1 total,   3556.1 free,   1921.8 used,   2349.2 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   4996.3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+
+top - 20:36:46 up  7:47,  1 user,  load average: 0.51, 0.69, 0.90
+Tasks:   0 total,   0 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.5 us,  0.7 sy,  0.0 ni, 93.9 id,  0.0 wa,  0.0 hi,  0.9 si,  0.0 st
+MiB Mem :   7827.1 total,   3556.1 free,   1921.8 used,   2349.2 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   4996.3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+
+top - 20:36:47 up  7:47,  1 user,  load average: 0.51, 0.69, 0.90
+Tasks:   0 total,   0 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.5 us,  0.4 sy,  0.0 ni, 94.4 id,  0.0 wa,  0.0 hi,  0.8 si,  0.0 st
+MiB Mem :   7827.1 total,   3556.1 free,   1921.8 used,   2349.2 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   4996.3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+
+top - 20:36:48 up  7:47,  1 user,  load average: 0.51, 0.69, 0.90
+Tasks:   0 total,   0 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.2 us,  0.2 sy,  0.0 ni, 93.1 id,  1.6 wa,  0.0 hi,  0.7 si,  0.0 st
+MiB Mem :   7827.1 total,   3559.1 free,   1921.2 used,   2346.7 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   4999.3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+
+top - 20:36:49 up  7:47,  1 user,  load average: 0.51, 0.69, 0.90
+Tasks:   0 total,   0 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.0 us,  0.5 sy,  0.0 ni, 95.0 id,  0.0 wa,  0.0 hi,  0.5 si,  0.0 st
+MiB Mem :   7827.1 total,   3559.1 free,   1921.2 used,   2346.7 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   4999.3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+
+top - 20:36:50 up  7:47,  1 user,  load average: 0.51, 0.69, 0.90
+Tasks:   0 total,   0 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.4 us,  0.5 sy,  0.0 ni, 94.9 id,  0.0 wa,  0.0 hi,  0.3 si,  0.0 st
+MiB Mem :   7827.1 total,   3559.1 free,   1921.2 used,   2346.7 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   4999.3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+
+top - 20:36:51 up  7:47,  1 user,  load average: 0.55, 0.69, 0.90
+Tasks:   0 total,   0 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.6 us,  0.6 sy,  0.0 ni, 95.4 id,  0.0 wa,  0.0 hi,  0.4 si,  0.0 st
+MiB Mem :   7827.1 total,   3558.5 free,   1921.9 used,   2346.7 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   4998.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
